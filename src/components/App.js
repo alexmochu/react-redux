@@ -6,13 +6,13 @@ class App extends React.Component {
         return (
             <div className="container-fluid">
                 <Header />
-                {this.props.children}
+                <p>{this.props.children}</p>
             </div>
         );
     }
 }
 
-App.PropTypes = {
+App.propTypes = {
     children: PropTypes.object.isRequired
 };
 
