@@ -13,7 +13,7 @@ describe('Store', function() {
         };
         //act
         const action = courseActions.createCourseSuccess(course);
-        store.dispatch(action)
+        store.dispatch(action);
 
         //assert
         const actual = store.getState().courses[0];
